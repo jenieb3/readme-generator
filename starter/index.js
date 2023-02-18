@@ -55,15 +55,18 @@ inquirer.prompt([
 ]).then((data) => {
     // Generate README file using data from user input
     const readmeText = generateMarkdown(data);
-});
+    const filePath = path.join(__dirname, 'README.md');
+    // function to write README file
+    fs.writeFile('README.md', readmeText, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log('README file generated successfully!');
+        }
 
-// function to write README file
-fs.writeFile('README.md', readmeText, (err) => {
-    if (err) {
-        console.error(err);
-    } else {
-        console.log('README file generated successfully!');
-    }
+    });
+
+
 });
 
 

@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/jenieb3/readme-generator#readme",
   "dependencies": {
-    "inquirer": "^6.5.2"
+    "inquirer": "^6.5.0"
   }
 }

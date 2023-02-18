@@ -18,6 +18,11 @@ inquirer.prompt([
     },
     {
         type: 'input',
+        name: 'video',
+        message: 'Enter the URL of a video demonstrating your project:'
+    },
+    {
+        type: 'input',
         name: 'installation',
         message: 'What are the steps required to install your project?'
     },
@@ -53,6 +58,7 @@ inquirer.prompt([
         message: 'What is your email address?'
     }
 ]).then((data) => {
+    console.log(data);
     // Generate README file using data from user input
     const readmeText = generateMarkdown(data);
     const filePath = path.join(__dirname, 'README.md');
@@ -68,8 +74,6 @@ inquirer.prompt([
 
 
 });
-
-
 
 // function to initialize program
 function init() {

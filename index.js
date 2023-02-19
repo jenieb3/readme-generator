@@ -2,6 +2,12 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+const licenseBadges = {
+    MIT: 'https://img.shields.io/badge/License-MIT-yellow.svg',
+    GPLv3: 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+    Apache: 'https://img.shields.io/badge/License-Apache%202.0-blue.svg',
+    Unlicense: 'https://img.shields.io/badge/license-Unlicense-blue.svg'
+  };
 
 // array of questions for user
 
@@ -60,6 +66,7 @@ inquirer
         }
     ]).then((data) => {
         // Generate README file using data from user input
+        const licenseBadge = `![${data.license} License](${licenseBadges[data.license]})`;//for badge
         const readmeText = generateMarkdown(data);
         const filePath = path.join(__dirname, 'README.md');
         // function to write README file

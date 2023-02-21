@@ -49,6 +49,11 @@ inquirer
             message: 'Provide examples of how to run tests:'
         },
         {
+            type: 'input',
+            name: 'video',
+            message: 'Enter the URL of a video demonstrating your project:'
+        },
+        {
             type: 'list',
             name: 'license',
             message: 'Choose a license for your project:',

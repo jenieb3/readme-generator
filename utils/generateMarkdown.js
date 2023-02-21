@@ -7,8 +7,7 @@ function generateMarkdown(data) {
   ## Description
 
   ${data.description}
-  ${data.video ? `Watch a video demonstration of the project [here](${data.video}).` : ''}
-
+  
   ## Table of Contents
 
   - [Installation](#installation)
@@ -37,6 +36,10 @@ function generateMarkdown(data) {
   ## Tests
 
   ${data.tests}
+
+  ## Video demonstration
+
+  ${data.video ? `Watch a video demonstration of the project [here](${data.video}).` : ''}
 
   ## Questions
 

@@ -7,7 +7,7 @@ const licenseBadges = {
     GPLv3: 'https://img.shields.io/badge/License-GPLv3-blue.svg',
     Apache: 'https://img.shields.io/badge/License-Apache%202.0-blue.svg',
     Unlicense: 'https://img.shields.io/badge/license-Unlicense-blue.svg'
-  };
+};
 
 // array of questions for user
 
@@ -22,11 +22,6 @@ inquirer
             type: 'input',
             name: 'description',
             message: 'Provide a brief description of your project:'
-        },
-        {
-            type: 'input',
-            name: 'video',
-            message: 'Enter the URL of a video demonstrating your project:'
         },
         {
             type: 'input',
@@ -58,6 +53,11 @@ inquirer
             name: 'license',
             message: 'Choose a license for your project:',
             choices: ['MIT', 'GPLv3', 'Apache', 'Unlicense']
+        },
+        {
+            type: 'input',
+            name: 'screenshot',
+            message: 'Enter the URL or file path for a screenshot of your project:',
         },
         {
             type: 'input',

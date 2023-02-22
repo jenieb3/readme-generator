@@ -34,16 +34,19 @@ function generateMarkdown(data) {
   ${data.contributing}
 
   ## Tests
-
   ${data.tests}
 
-  ## Video demonstration
-
-  ${data.video ? `Watch a video demonstration of the project [here](${data.video}).` : ''}
+  ## License
+  This project is licensed under the ${data.license} license.
 
   ## Questions
+  For questions or support, please contact ${data.email}. To see other projects, visit https://github.com/${data.github}/.
 
-  If you have any questions or issues, you can reach me at ${data.email}. You can also check out my GitHub profile at [https://github.com/${data.github}](https://github.com/${data.github}).
-  `;
+  ## Screenshot
+ ![Screenshot](${data.screenshot})
+
+  ## Video
+  [${data.title} Video Demo](${data.video})
+`;
 }
 module.exports = generateMarkdown;

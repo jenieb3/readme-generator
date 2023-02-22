@@ -4,7 +4,7 @@
   
   ## Description
 
-  This project uses npm inquirer package to dynamically create a professional Readme.md file. However, before the Readme is generated user are propmted to input the required information for the different sections of the Readme file. I ran this application a few times in my terminal and it generated a Readme.md file. I also added a blank Readme file and this application was able to generate the content of the Readme.
+  This project uses npm inquirer package to dynamically create a professional Readme.md file. However, before the Readme is generated a user is propmted to input the required information for the different sections of the Readme file. I ran this application a few times in my terminal and it generated a Readme.md file. I also added a blank Readme file which I had pulled from github and this application was able to generate the content of this Readme.
   
   ## Table of Contents
 
@@ -33,9 +33,6 @@
 
   ## Tests
   To run the tests for my project, simply run the npm test command. This will launch the test runner and display the results in your terminal.
-
-  ## License
-  This project is licensed under the MIT license.
 
   ## Questions
   For questions or support, please contact jenelle.garbrah3@gmail.com. To see other projects, visit https://github.com/jenieb3/.
